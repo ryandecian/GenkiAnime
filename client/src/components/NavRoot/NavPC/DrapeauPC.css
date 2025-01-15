@@ -1,0 +1,24 @@
+@import "../../../Root.css";
+
+/*Ce fichier est destinée à styliser le composant Drapeau.tsx qui est commun 
+à NavMobile et NavPC.
+
+Ce fichier ne stylise QUE le secteur NavPC !
+Ne stylise pas le secteur NavMobile !
+
+Le composant Drapeau.tsx se localise dans le dossier NavRoot et 
+ce ficher CSS est importé directement dans le ficher NavPC.css
+qui est lui même utilisé dans le composant principale NavPC.tsx
+*/
+
+.Container-Drapeaux-PC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.Container-Drapeaux-PC > div > img {
+  border-radius: 1rem;
+  background-color: var(--BackgroudButtonRoot);
+}

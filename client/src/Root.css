@@ -1,0 +1,25 @@
+:root {
+  --menuBurger: #e8e8e8;
+  --textColorMenu: #818181;
+
+  /*Création d'une logique de contrôle
+Pour inverser jour et nuit il faut juste inverser le chiffre des
+variable controle. 1 est remplacé par 2 et 2 remplacé par 1*/
+
+  --controle1: rgb(0, 0, 0);
+  --controle2: rgb(255, 255, 255);
+
+  /*Contrôle des couleurs text et background-color du site*/
+  --TextColorButtonRoot: rgb(0, 0, 0);
+  --TextColorRoot: var(--controle2);
+  --BackgroudColorRoot: var(--controle1);
+  --BackgroudButtonRoot: #ffffff;
+
+  /*Button MenuBurger avec id openBtn dans fichier NavMobile.tsx*/
+  --ButtonMenuBerger: var(--controle2);
+  --BackgroundColorButtonMenuBurger: var(--BackgroudColorRoot);
+}
+
+body {
+  background-color: var(--BackgroudColorRoot);
+}

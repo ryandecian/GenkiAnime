@@ -1,0 +1,23 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0;
+  margin: 0px 0px 0px 2rem;
+}
+
+.menu > li {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.menu > li > a {
+  text-decoration: none;
+  color: var(--TextColorButtonRoot);
+}
+
+.menu > li > Link {
+  text-decoration: none;
+  color: var(--TextColorButtonRoot);
+}

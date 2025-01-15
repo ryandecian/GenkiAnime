@@ -1,0 +1,73 @@
+@import "../../../Root.css";
+@import "./SearchPC.css";
+
+.nav-desktop {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.ContainerPC-1 {
+  display: grid;
+  grid-template-columns: 110px 130px 60px 1fr 150px;
+  gap: 5px;
+  width: 100%;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+}
+
+.Logo > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.Logo > a > img {
+  margin: 0rem 0rem 0rem 1rem;
+  width: 100px;
+  border-radius: 1rem;
+}
+
+.MenuPC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.MenuPC > a {
+  text-decoration: none;
+  color: var(--TextColorButtonRoot);
+  border-radius: 1rem;
+  padding: 5px;
+  background-color: var(--BackgroudButtonRoot);
+}
+
+.MenuPC.Recommendation {
+  margin: 0px 0px 0px 5px;
+}
+
+.MenuPC.Genre {
+  margin: 0px 0px 0px 5px;
+}
+
+.Container-Search-PC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.ContainerPC-2 {
+  color: var(--TextColorRoot);
+}

@@ -1,0 +1,10 @@
+@import "../../../Root.css";
+
+.DescriptionComedy {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin: 0rem 0rem 0rem 1rem;
+  color: var(--TextColorRoot);
+}

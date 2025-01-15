@@ -1,0 +1,59 @@
+@import "../../Root.css";
+
+/*Ce fichier ne stylise QUE le composant DrapeauRoot.tsx qui est utilisé 
+dans NavMobile et NavPC.
+
+Grace à des props, il permet de styliser localement et uniquement dans
+le composant ou il est appelé sous forme d'objet.
+
+Le composant DrapeauRoot.tsx se localise dans le dossier NavRoot et 
+ce ficher CSS est importé directement dans les ficher NavPC.tsx et
+NavMobile.tsx
+*/
+
+/*-------------------------------------------------------------------*/
+
+/*Code utilisé dans NavMobile.tsx*/
+.ContainerDrapeauMobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 3rem 0rem 0rem;
+}
+
+.LanguageFRMobile,
+.LanguageENMobile {
+  width: 3rem;
+  height: 3rem;
+  margin: 0rem 1rem;
+}
+
+.ImgDrapeauMobile {
+  border-radius: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/*Code utilisé dans NavPC.tsx*/
+.ContainerDrapeauPC {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.LanguageFRPC {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.LanguageENPC {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.ImgDrapeauPC {
+  border-radius: 1rem;
+  width: 100%;
+  background-color: var(--BackgroudButtonRoot);
+}

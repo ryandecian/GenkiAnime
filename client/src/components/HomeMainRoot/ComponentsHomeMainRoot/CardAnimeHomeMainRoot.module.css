@@ -1,0 +1,246 @@
+@import "../../../Root.css";
+
+/*--------------------------------------------------------------------------*/
+
+/*Style de la balise Link*/
+.CardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Version mobile style CSS module*/
+.ContainerRootCardAnimeHomeMobile {
+  display: grid;
+  grid-template-columns: 180px;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 5px;
+  border-radius: 1rem;
+}
+@media (max-width: 384px) {
+  .ContainerRootCardAnimeHomeMobile {
+    grid-template-columns: repeat(1, 180px);
+  }
+}
+@media (min-width: 385px) and (max-width: 569px) {
+  .ContainerRootCardAnimeHomeMobile {
+    grid-template-columns: repeat(2, 180px);
+  }
+}
+@media (min-width: 570px) {
+  .ContainerRootCardAnimeHomeMobile {
+    grid-template-columns: repeat(3, 180px);
+  }
+}
+
+.ContainerCardAnimeHomeMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.CardAnimeHomeImgMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.CardAnimeHomeImgMobile > img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 1rem;
+  max-height: auto;
+}
+
+.ContainerCardAnimeInfoMobile {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.TitleAnimeHomeMobile {
+  margin: 1rem 0rem 0.5rem 0rem;
+  font-size: 1rem;
+  color: var(--TextColorRoot);
+}
+
+.GenreAnimeHomeMobile {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--TextColorRoot);
+}
+
+.YearAnimeHomeMobile {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.8rem;
+  color: var(--TextColorRoot);
+}
+
+/*--------------------------------------------------------------*/
+
+/*Version PC style CSS module*/
+.ContainerRootCardAnimeHomePC {
+  display: grid;
+  grid-template-columns: 240px 240px 240px;
+  justify-content: center;
+  max-width: 100%;
+  gap: 5px;
+  border-radius: 1rem;
+}
+@media (max-width: 994px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(3, 240px);
+  }
+}
+@media (min-width: 995px) and (max-width: 1239px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(4, 240px);
+  }
+}
+@media (min-width: 1240px) and (max-width: 1484px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(5, 240px);
+  }
+}
+@media (min-width: 1485px) and (max-width: 1729px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(6, 240px);
+  }
+}
+@media (min-width: 1730px) and (max-width: 1974px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(7, 240px);
+  }
+}
+@media (min-width: 1975px) and (max-width: 2219px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(8, 240px);
+  }
+}
+@media (min-width: 2220px) and (max-width: 2464px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(9, 240px);
+  }
+}
+@media (min-width: 2465px) and (max-width: 2709px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(10, 240px);
+  }
+}
+@media (min-width: 2710px) and (max-width: 2954px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(11, 240px);
+  }
+}
+@media (min-width: 2955px) and (max-width: 3199px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(12, 240px);
+  }
+}
+@media (min-width: 3200px) and (max-width: 3444px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(13, 240px);
+  }
+}
+@media (min-width: 3445px) and (max-width: 3689px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(14, 240px);
+  }
+}
+@media (min-width: 3690px) and (max-width: 3934px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(15, 240px);
+  }
+}
+@media (min-width: 3935px) and (max-width: 4179px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(16, 240px);
+  }
+}
+@media (min-width: 4180px) and (max-width: 4424px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(17, 240px);
+  }
+}
+@media (min-width: 4425px) and (max-width: 4669px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(18, 240px);
+  }
+}
+@media (min-width: 4670px) and (max-width: 4914px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(19, 240px);
+  }
+}
+@media (min-width: 4915px) and (max-width: 5159px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(20, 240px);
+  }
+}
+@media (min-width: 5160px) {
+  .ContainerRootCardAnimeHomePC {
+    grid-template-columns: repeat(21, 240px);
+  }
+}
+
+.ContainerCardAnimeHomePC {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.CardAnimeHomeImgPC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  max-height: auto;
+}
+
+.CardAnimeHomeImgPC > img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 1rem;
+  max-height: auto;
+}
+
+.ContainerCardAnimeInfoPC {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
+.TitleAnimeHomePC {
+  margin: 1rem 0rem 0.5rem 0rem;
+  font-size: 1rem;
+  color: var(--TextColorRoot);
+}
+
+.GenreAnimeHomePC {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--TextColorRoot);
+}
+
+.YearAnimeHomePC {
+  margin: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.8rem;
+  color: var(--TextColorRoot);
+}

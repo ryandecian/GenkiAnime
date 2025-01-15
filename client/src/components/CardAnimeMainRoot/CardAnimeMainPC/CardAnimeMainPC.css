@@ -1,0 +1,11 @@
+@import "../../../Root.css";
+
+.CardAnimeMainPC {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.ChargementPC {
+  color: var(--TextColorRoot);
+}

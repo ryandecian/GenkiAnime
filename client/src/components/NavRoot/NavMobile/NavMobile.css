@@ -1,0 +1,105 @@
+@import "../../../Root.css";
+@import "./SearchMobile.css";
+
+.nav-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.NavBarre {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.NavBarre > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.NavBarre > div > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.NavBarre > div > a > img {
+  width: 70%;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+#Autor {
+  color: var(--TextColorRoot);
+}
+
+.sideNav {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -250px;
+  background-color: var(--menuBurger);
+  transition: right 0.5s ease;
+}
+
+.sideNav.active {
+  right: 0;
+}
+
+.sideNav > div {
+  display: flex;
+  justify-content: start;
+  padding: 0rem 0rem 3rem 0rem;
+}
+
+.ButtonClose {
+  margin: 1rem 0rem 0rem 1rem;
+  padding: 0.4rem 1rem 0.4rem 1rem;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  display: block;
+  transition: 0.3s;
+  color: black;
+  border-radius: 3rem;
+  background-color: #e2e2e2;
+
+  /*Retire les contours du Button*/
+  border: none;
+  outline: none;
+}
+
+/*Réglage Button MenuBurger*/
+
+#openBtn {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  border-radius: 1rem;
+  background-color: var(--BackgroundColorButtonMenuBurger);
+
+  /*Retire les contours du Button*/
+  border: none;
+  outline: none;
+}
+
+.menuBurger > span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: var(--ButtonMenuBerger);
+  margin: 0.5rem 0rem;
+}

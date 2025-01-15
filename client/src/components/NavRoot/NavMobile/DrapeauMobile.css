@@ -1,0 +1,29 @@
+/*Ce fichier est destinée à styliser le composant Drapeau.tsx qui est commun 
+à NavMobile et NavPC.
+
+Ce fichier ne stylise QUE le secteur NavMobile !
+Ne stylise pas le secteur NavPC !
+
+Le composant Drapeau.tsx se localise dans le dossier NavRoot et 
+ce ficher CSS est importé directement dans le ficher NavMobile.CSS
+qui est lui même utilisé dans le composant principale NavMobile.tsx
+*/
+
+.Container-Drapeaux-Mobile {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 3rem 0rem 0rem;
+}
+
+.Container-Drapeaux-Mobile > div {
+  width: 3rem;
+  height: 3rem;
+  margin: 0rem 1rem;
+}
+
+.Container-Drapeaux-Mobile > div > img {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: red;
+}

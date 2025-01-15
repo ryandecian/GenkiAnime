@@ -1,0 +1,21 @@
+@import "../../../Root.css";
+
+.GenreMainPC {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.DescriptionGenrePC {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.DescriptionGenrePC > h3 {
+  color: var(--TextColorRoot);
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+@import "../../Root.css";
+
+.FooterRoot {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 1rem;
+  background-color: var(--BackgroundColorRoot);
+  margin: 1.5rem 0rem 0rem 1rem;
+  text-align: center;
+}
+
+.FooterRoot > h4 {
+  margin: 0.25rem 0rem 0.25rem 1rem;
+  color: var(--TextColorRoot);
+}

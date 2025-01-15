@@ -1,0 +1,11 @@
+@import "../../../Root.css";
+
+.CardAnimeMainMobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.ChargementMobile {
+  color: var(--TextColorRoot);
+}

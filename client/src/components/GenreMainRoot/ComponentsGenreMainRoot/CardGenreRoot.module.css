@@ -1,0 +1,126 @@
+@import "../../../Root.css";
+:root {
+  --SizeA: 120px;
+  --SizeGrid: calc(var(--SizeA) + 16px);
+  --gap: 1rem;
+}
+
+/*-------------------------------------------------------*/
+
+/*Style module CSS version Mobile*/
+.CardGenreMobile {
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: var(--SizeGrid);
+}
+
+@media (min-width: 308px) and (max-width: 459px) {
+  .CardGenreMobile {
+    grid-template-columns: repeat(2, var(--SizeGrid));
+  }
+}
+@media (min-width: 460px) and (max-width: 611px) {
+  .CardGenreMobile {
+    grid-template-columns: repeat(3, var(--SizeGrid));
+  }
+}
+@media (min-width: 612px) and (max-width: 763px) {
+  .CardGenreMobile {
+    grid-template-columns: repeat(4, var(--SizeGrid));
+  }
+}
+@media (min-width: 764px) {
+  .CardGenreMobile {
+    grid-template-columns: repeat(5, var(--SizeGrid));
+  }
+}
+
+.CardGenreMobile > a {
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--BackgroudButtonRoot);
+  color: var(--TextColorButtonRoot);
+  padding: 0.5rem;
+  width: var(--SizeA);
+}
+
+/*-------------------------------------------------------*/
+
+/*Style module CSS version PC*/
+.CardGenrePC {
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  grid-template-columns: var(--SizeGrid);
+}
+@media (max-width: 915px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(5, var(--SizeGrid));
+  }
+}
+@media (min-width: 916px) and (max-width: 1067px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(6, var(--SizeGrid));
+  }
+}
+@media (min-width: 1068px) and (max-width: 1219px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(7, var(--SizeGrid));
+  }
+}
+@media (min-width: 1220px) and (max-width: 1371px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(8, var(--SizeGrid));
+  }
+}
+@media (min-width: 1372px) and (max-width: 1523px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(9, var(--SizeGrid));
+  }
+}
+@media (min-width: 1524px) and (max-width: 1675px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(10, var(--SizeGrid));
+  }
+}
+@media (min-width: 1676px) and (max-width: 1827px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(11, var(--SizeGrid));
+  }
+}
+@media (min-width: 1828px) and (max-width: 1979px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(12, var(--SizeGrid));
+  }
+}
+@media (min-width: 1980px) and (max-width: 2131px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(13, var(--SizeGrid));
+  }
+}
+@media (min-width: 2132px) and (max-width: 2283px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(14, var(--SizeGrid));
+  }
+}
+@media (min-width: 2284px) and (max-width: 2435px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(15, var(--SizeGrid));
+  }
+}
+@media (min-width: 2436px) {
+  .CardGenrePC {
+    grid-template-columns: repeat(15, var(--SizeGrid));
+  }
+}
+
+.CardGenrePC > a {
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--BackgroudButtonRoot);
+  color: var(--TextColorButtonRoot);
+  padding: 0.5rem;
+  width: var(--SizeA);
+}
